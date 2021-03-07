@@ -8,7 +8,6 @@ $protocol = $_SERVER['SERVER_PROTOCOL'];
 $http_accept = $_SERVER['HTTP_ACCEPT'];
 $tarih = date('d.m.Y H:i:s');
 
-
 $kayit = fopen("iplog.txt", "a");
 fputs($kayit, "IP: $hc_ip - IP: $ip - PORT: $port - BROWSER: $browser - REFERANS: $referans - PROTOCOL: $protocol - HTTP_ACCEPT: $http_accept - TARIH: $tarih \n");
 fclose($kayit);
