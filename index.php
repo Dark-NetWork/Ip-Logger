@@ -2,7 +2,7 @@
 $hc_ip = $_SERVER['HTTP_CLIENT_IP'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $port = $_SERVER['REMOTE_PORT'];
-$browser = getenv('HTTP_USER_AGENT');
+$browser = $_SERVER['HTTP_USER_AGENT'];
 $referans = $_SERVER['HTTP_REFERER'];
 $protocol = $_SERVER['SERVER_PROTOCOL'];
 $http_accept = $_SERVER['HTTP_ACCEPT'];
